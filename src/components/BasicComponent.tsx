@@ -1,3 +1,4 @@
+import {useState} from "react";
 
 interface TestingComponentProps {
     titleprops : string
@@ -5,11 +6,16 @@ interface TestingComponentProps {
 
 export const BasicComponent: React.FC<TestingComponentProps> = ({ titleprops}) => {
 
-    const title  = "Elo3"
+    const [counterCurrentValue, setCounter] = useState(1);
+
+
     return (
         <>
-            <div>{title}</div>
-            <div>{titleprops}</div>
+
+            <div><h3>{titleprops}</h3></div>
+            <div>{counterCurrentValue}</div>
+            <button onClick={() => {setCounter(counterCurrentValue + 1)}}>ADD</button>
+            <button onClick={() => {setCounter(counterCurrentValue - 1)}}>REMOVE</button>
         </>
 
     )
