@@ -3,9 +3,9 @@ interface TestingComponentProps {
     titleprops : string
 }
 
-export const TestingComponent: React.FC<TestingComponentProps> = ({ titleprops}) => {
+export const BasicComponent: React.FC<TestingComponentProps> = ({ titleprops}) => {
 
-    const title  = "Elo"
+    const title  = "Elo3"
     return (
         <>
             <div>{title}</div>
