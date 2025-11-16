@@ -1,14 +1,18 @@
 
 import './App.css'
+
 import{BasicComponent} from "./components/BasicComponent.tsx";
+import DisplayData from './components/DisplayData.tsx';
 
 function App() {
 
   return (
     <>
       <div>
-          <BasicComponent
-           titleprops = "Counter Title"
+        <DisplayData />
+
+        <BasicComponent
+          titleprops="Counter Title"
 
           />
     
